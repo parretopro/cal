@@ -1,18 +1,26 @@
 <!DOCTYPE html><html><head>
-<title>Calculator</title>
+<title>Calculator X^2 1/x</title>
 <meta charset="utf-8">
 <script type="text/javascript">
 	function inverse() {
         	var num = document.getElementById("n1");
 	  	num.value = 1/num.value;
 	}
+	function square() {
+  		var num = document.getElementById("n1");
+  		num.value = num.value * num.value;
+	}
 </script>
 </head>
 <body>
+	<h3>My Calculator</h3>
 	Number:
     	<input type="text" id="n1" onclick="empty()"><p>
 
-	        <button onclick="cuadrado()"> x<sup>2</sup> </button>
-		  <button onclick="inverse()"> 1/x </button>
+          <button onclick="cuadrado()"> x<sup>2</sup> </button>
+	  <button onclick="inverse()"> 1/x </button>
+	</input>
+
+
 </body>
 </html>
